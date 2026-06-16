@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio | Home</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#eef2ff 0%,#93c5fd 100%);
+    min-height:100vh;
+}
+
+nav{
+    background:#1e293b;
+    padding:18px;
+    box-shadow:0 4px 12px rgba(15,23,42,0.08);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:35px;
+}
+
+nav a{
+    color:#e2e8f0;
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:0.5px;
+    transition:all 0.3s ease;
+}
+
+nav a:hover{
+    color:#38bdf8;
+    text-shadow:0 0 8px rgba(56,189,248,0.4);
+    transform:translateY(-2px);
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #93c5fd;
+    box-shadow:0 8px 25px rgba(147,197,253,0.5);
+    margin-bottom:25px;
+    transition:transform 0.4s ease,border-color 0.4s ease;
+}
+
+.hero img:hover{
+    transform:scale(1.05) rotate(3deg);
+    border-color:#3b82f6;
+}
+
+.hero h1{
+    color:#1e3a8a;
+    font-size:2.5rem;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+/* INTRODUCTION BOX */
+
+.intro-box{
+    background:white;
+    max-width:850px;
+    margin:30px auto;
+    padding:35px;
+    border-radius:20px;
+    border:2px solid #bfdbfe;
+    box-shadow:0 10px 25px rgba(147,197,253,0.15);
+    position:relative;
+    overflow:hidden;
+    transition:0.3s ease;
+}
+
+.intro-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(59,130,246,0.2);
+}
+
+.intro-box::before{
+    content:"❀";
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:70px;
+    color:rgba(59,130,246,0.12);
+}
+
+.intro-box::after{
+    content:"✿";
+    position:absolute;
+    bottom:10px;
+    left:20px;
+    font-size:50px;
+    color:rgba(147,197,253,0.18);
+}
+
+.intro-box p{
+    line-height:1.8;
+    color:#475569;
+    font-size:1.1rem;
+}
+
+/* CAREER BOX */
+
+.career{
+    margin-top:35px;
+    background:white;
+    max-width:850px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(147,197,253,0.2);
+    border:2px solid #bfdbfe;
+    transition:0.3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.career:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(147,197,253,0.3);
+}
+
+.career::before{
+    content:"❀";
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:70px;
+    color:rgba(59,130,246,0.12);
+}
+
+.career::after{
+    content:"✿";
+    position:absolute;
+    bottom:10px;
+    left:20px;
+    font-size:50px;
+    color:rgba(147,197,253,0.18);
+}
+
+.career h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:1.6rem;
+    position:relative;
+    display:inline-block;
+}
+
+.career h2::after{
+    content:'';
+    display:block;
+    width:50px;
+    height:4px;
+    background:#93c5fd;
+    border-radius:2px;
+    margin-top:8px;
+}
+
+.career p{
+    line-height:1.8;
+    color:#475569;
+    font-size:1.05rem;
+}
+
+footer{
+    margin-top:80px;
+    background:#1e293b;
+    color:#94a3b8;
+    text-align:center;
+    padding:20px;
+    font-size:0.9rem;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="profile.html">Profile</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="game.html">Game</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<img src="https://raw.githubusercontent.com/najwaaqistina-eng/qistina-mini-game/7b9965879bc95eeb3067b5a0c53d7ce7f8c2887d/web%20pic.jpg" alt="Profile Picture">
+
+<h1>Hi, I'm Qistina Najwa</h1>
+
+<div class="intro-box">
+
+<p>
+I am a Diploma in Electronic Engineering (Internet of Things) student at TVET MARA Petaling Jaya.
+I am passionate about technology, embedded systems, web development, and IoT solutions.
+I enjoy learning new technologies and developing innovative projects that can solve real-world problems.
+</p>
+
+</div>
+
+<div class="career">
+
+<h2>Career Ambition</h2>
+
+<p>
+My goal is to build a career as a Software Developer, specializing in creating
+smart applications and digital solutions. I want to utilize my programming skills to
+develop innovative platforms that optimize technology for users.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 My Personal Portfolio Website
+</p>
+
+</footer>
+
+</body>
+</html>
